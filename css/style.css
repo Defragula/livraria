@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+body{
+	background-color:#fffbf5;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: 0px;
+}
+
+h1{
+	font-family: font-family: 'Cabin', sans-serif;Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+	color: #ffff;
+	font-size: 27px;
+}
+
+header{
+	display: block;
+	background-color: bisque;
+	height: 100px;
+	text-align: center;
+	background-image: url(../img/pexels-mathias-pr-reding-8123067.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+input.value:hover{
+initial-value: "";
+}
+
+aside{
+	display: flex;
+	flex-direction: row;
+	background-color: blue;
+}
+
+/*
+.menu-principal{
+	display: block;
+	margin: 0;
+	width: 400%;
+	height: 20;
+}
+
+#quemsomos{
+	display: block;
+	height: 400px;
+	background-color: blue;
+}
+
+#clubeda{
+	display: block;
+	height: 400px;
+	background-color: blanchedalmond;
+}
+
+#contato{
+	display: block;
+	height: 400px;
+	background-color: blueviolet;
+}
+*/
+section{
+	background-color: #b48955;
+	/*width: 400px;
+	height: 400px;*/
+	border-radius: 0;
+	align-items:baseline;
+	color: #ffffffff;
+	margin: 1px;
+}
+/*
+section:hover{
+	background-color: #dab58a;
+	width: 300px;
+	border-radius: 15px 30px 10px 5px;
+	align-items:baseline;
+	color:black;
+}*/
+
+nav ul li{
+	display: inline-flex;
+	padding: 5px;
+}
+
+nav ul li a{
+	display: block;
+	background-color: #b48955;
+	height: 40px;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 5px 30px 10px 5px;
+}
+
+nav ul li a:visited, a:link{
+	color: #ffffffff;
+}
+
+nav ul li a:hover{
+	color:black;
+	background-color: #dab58a;
+}
+
+footer{
+	background-color:#ffe4b5;
+	height: 50px;
+	text-align: center;
+}
