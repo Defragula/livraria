@@ -11,7 +11,7 @@
     <body>
         <header>
             <h1>Livraria Comando</h1>
-            <nav class="menu-principal">
+<!--            <nav class="navbar navbar-dark bg-dark">Navbar
                 <ul>
                     <li><a href="#principal">Principal</a></li>
                     <li><a href="#quemsomos">Quem somos</a></li>
@@ -19,39 +19,57 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#principal">Principal</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#quemsomos" tabindex="-1" aria-disabled="true">Quem Somos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#clubeda" tabindex="-1" aria-disabled="true">Clube da leitura</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#contato" tabindex="-1" aria-disabled="true">Contato</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                      <button class="btn btn-outline-success" type="buscar">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
         </header>
-        <main>
 
+        <main>
             <section id="quemsomos">
                 <h2>_Quem somos.:</h2>
-                   <br>Lorem ipsum dolor sit amet. 
-                   <br>Qui esse itaque ex perferendis ducimus ut repudiandae distinctio est debitis eveniet sed 
-                   <br>temporibus voluptatum a nihil quisquam et tenetur asperiores. 
-                   <br>Et alias sapiente in dolorem nihil aut omnis enim qui galisum optio et numquam quod. 
-                   <br>Et quos omnis et doloremque fuga et velit itaque qui eveniet eligendi.
+
             </section>
+
             <section id="clubeda">
                 <h2>_Clube da leitura.:</h2>
                 <form>
                     <br><input type="text" id="nome" value="nome">
                     <br><input type="text" id="email" value="e-mail">
-                    <br><input type="submit" value="Assinar">
+                    <br><input type="submit" id="assinar" value="Assinar">
                 </form>
             </section>
+
             <section id="contato">
                 <h2>_Contato.:</h2>
-                <br>Lorem ipsum dolor sit amet. 
-                <br>Et facilis modi in distinctio quod sed tenetur omnis non dolores repellat nam galisum provident ab quae nostrum quo inventore omnis. 
-                <br>Qui veritatis suscipit Est molestiae eum laborum numquam id consequatur eius qui facilis nemo? 
-                <br>Ut iste expedita qui odio debitis Quo incidunt. Non culpa nihil vel quis expedita et maiores dolor doloremque omnis.
-                    <ol>
-                        <li>Et fugiat eaque aut expedita fugit et dolor dolor.</li>
-                        <li>Aut tenetur voluptas hic ullam suscipit At sequi iure ex temporibus blanditiis.</li>
-                        <li>Et repudiandae neque vel sunt dicta.</li>
-                        <li>Sed magni ratione sed quas doloremque qui veritatis nostrum non iure nobis.</li>
-                    </ol>                 
             </section>
 
+            <!-- não está funcionando, ainda...
             <aside>
                 <h4>testando aside</h4>
                 <p>Lorem Ipsum is asdfggh simply dummy text of the printing and typesetting industry.
@@ -59,6 +77,7 @@
                 <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                 <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
             </aside>  
+            -->            
         </main>
       
         <footer>
