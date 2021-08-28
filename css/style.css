@@ -8,31 +8,33 @@ body{
 h1{
 	font-family: font-family: 'Cabin', sans-serif;Cambria, Cochin, Georgia, Times, Times New Roman, serif;
 	color: #ffff;
+	height: 106px;
 	font-size: 27px;
 }
 
 header{
 	display: block;
 	background-color: bisque;
-	height: 100px;
+	height: 162px;
 	text-align: center;
 	background-image: url(../img/pexels-mathias-pr-reding-8123067.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-input, input:hover{
+/*input{
 	color: #ccc;
 	border-radius: 5px;
 	border: 0px;
 	margin: 1px;
 }
 
-.nav-link active:hover{
-	color: #ccc;
-
-}
-
+input:hover{
+	color: #000;
+	border-radius: 5px;
+	border: 0px;
+	margin: 1px;
+}*/
 
 /*
 input:focus { 
@@ -75,13 +77,13 @@ input:focus {
 */
 section{
 	background-color: #b48955;
-	/*width: 400px;*/
-	height: 400px;
+	/*width: 400px;
+	height: 400px;*/
 	border-radius: 0;
 	align-items:baseline;
 	color: #ffffffff;
 	margin: 1px;
-	/*opacity: .7;*/
+	opacity: .7;
 }
 
 /*
@@ -95,18 +97,23 @@ section:hover{
 
 nav ul li{
 	color: #ffffffff;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
 	display: inline-flex;
-	padding: 5px;
+	
 }
 
 nav ul li a{
 	display: block;
 	color: #ffffffff;
-	background-color: #b48955;
+	/*background-color: #b48955;*/
+/*	margin: 0px;
+	border: 0px;
 	height: 40px;
-	padding: 10px;
+	padding: 0px;*/
 	text-decoration: none;
-	border-radius: 5px 30px 10px 5px;
+	/*border-radius: 5px 30px 10px 5px;*/
 }
 
 nav ul li a:visited, a:link{
@@ -115,11 +122,11 @@ nav ul li a:visited, a:link{
 
 nav ul li a:hover{
 	color:#ffffffff;
-	background-color: #dab58a;
+	background-color: #000;
 }
 
 footer{
 	background-color:#ffe4b5;
-	height: 50px;
+	height: 55px;
 	text-align: center;
 }
