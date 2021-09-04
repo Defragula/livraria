@@ -27,13 +27,12 @@ h4{
 
 .card-img-top:hover{
 	background-color:transparent;
-	opacity: .7;;
+	opacity: .7;
 }
 
 .card-body:hover{
 	background-color:snow;
-	border: 0px;
-	border-radius: 0px;
+
 }
 
 header{
