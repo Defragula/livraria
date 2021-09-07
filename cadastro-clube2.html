@@ -8,7 +8,7 @@
       <link rel="stylesheet" href="css/style.css">
       <title>Livraria Comando</title>
     </head>
-    <body oncopy="return false" oncut="return false">
+    <body>
         <header>
             <h1>Livraria Comando</h1>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -73,8 +73,8 @@
                       <div class="row">
                         <div class="col-lg col-sm-12 mb-3">
                           <div class="form-floating mb-lg-3 form-control-sm">
-                            <input type="text" class="form-control form-control-sm" id="nome" placeholder="Digite o seu nome completo">
-                            <label for="nome">Nome Completo</label>
+                            <input type="text" class="form-control form-control-sm" id="nome" placeholder="Digite o seu endereço completo" required>
+                            <label for="nome">Nome completo</label>
                           </div>
                         </div>
                         
@@ -83,41 +83,41 @@
                       <div class="row">
                         <div class="col-lg-4 col-sm-12 mb-3">
                           <div class="form-floating mb-lg-3 form-control-sm">
-                            <input type="number" class="form-control form-control-sm" id="telefone" placeholder="Somente numeros">
+                            <input type="number" class="form-control form-control-sm" id="telefone" placeholder="Somente numeros" required>
                             <label for="cpf">CPF</label>
                           </div>
                         </div>
 
                         <div class="col-lg-4 col-sm-12 mb-3">
                           <div class="form-floating mb-lg-3 form-control-sm">
-                            <input type="date" class="form-control form-control-sm" id="nascimento">
+                            <input type="date" class="form-control form-control-sm" id="nascimento" required>
                             <label for="nascimento">Nascimento</label>
                           </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-12 mb-3 pe-3">
-                          <div class="input-group mb-3 input-group-lg">
-                            <label class="input-group-text input-group-lg px-0 py-2" for="inputGroupSelect01">Sexo</label>
-                            <select class="form-select px-2 my-2" id="inputGroupSelect01">
-                              <option selected>Não informado</option>
-                              <option value="1">Maculino</option>
+                        <div class="col-lg-4 col-sm-12 mb-3">
+                          <div class="form-floating mb-lg-3 form-control-sm">
+                            <label for="sexo" class="py-1 m-0">Sexo</label>
+                            <select class="form-select mb-lg-3 form-control-sm" id="sexo" required>
+                              <option selected disabled value="">Não informado</option>
+                              <option value="1">Masculino</option>
                               <option value="2">Feminino</option>
                             </select>
-                          </div>
+                          </div>                       
                         </div>
-                      </div>
+                        </div>
 
                       <div class="row">
                         <div class="col-lg-6 col-sm-12 mb-3">
                           <div class="form-floating mb-lg-3 form-control-sm">
-                            <input type="email" class="form-control form-control-sm" id="email" placeholder="Digite o seu e-mail completo">
+                            <input type="email" class="form-control form-control-sm" id="email" placeholder="Digite o seu e-mail completo" required>
                             <label for="email">E-mail</label>
                           </div>
                         </div>
 
                         <div class="col-lg-6 col-sm-12 mb-3">
                           <div class="form-floating mb-lg-3 form-control-sm ">
-                            <input type="tel" class="form-control form-control-sm" id="telefone" placeholder="Digite o seu telefone">
+                            <input type="tel" class="form-control form-control-sm" id="telefone" placeholder="Digite o seu telefone" required>
                             <label for="telefone">Telefone</label>
                           </div>
                         </div>
@@ -127,7 +127,7 @@
                       <div class="row">
                         <div class="col-lg col-sm-12 mb-3">
                           <div class="form-floating mb-lg-3 form-control-sm">
-                            <input type="text" class="form-control form-control-sm" id="endereco" placeholder="Digite o seu endereço completo">
+                            <input type="text" class="form-control form-control-sm" id="endereco" placeholder="Digite o seu endereço completo" required>
                             <label for="endereco">Endereço completo</label>
                           </div>
                         </div>
@@ -136,33 +136,33 @@
 
                       <div class="row">
                         <div class="col-lg-4 col-sm-12 mb-3">
-                          <div class="form-floating mb-lg-3 form-control-sm ">
-                            <input type="text" class="form-control form-control-sm" id="numero" placeholder="Digite o seu numero do endereço">
+                          <div class="form-floating mb-lg-3 form-control-sm">
+                            <input type="text" class="form-control form-control-sm" id="numero" placeholder="Digite o seu numero de endereço" required>
                             <label for="numero">Numero</label>
                           </div>
                         </div>
 
                         <div class="col-lg-4 col-sm-12 mb-3">
                           <div class="form-floating mb-lg-3 form-control-sm">
-                            <input type="text" class="form-control form-control-sm" id="bairro" placeholder="Digite o seu nome completo">
+                            <input type="text" class="form-control form-control-sm" id="bairro" placeholder="Digite o seu Bairro" required>
                             <label for="Bairro">Bairro</label>
                           </div>
                         </div>
 
                         <div class="col-lg-4 col-sm-12 mb-3">
-                          <div class="form-floating mb-lg-3 form-control-sm ">
-                            <input type="text" class="form-control form-control-sm" id="cidade" placeholder="Digite a cidade">
+                          <div class="form-floating mb-lg-3 form-control-sm">
+                            <input type="text" class="form-control form-control-sm" id="cidade" placeholder="Digite a cidade" required>
                             <label for="cidade">Cidade</label>
                           </div>
                         </div>
                       </div>
 
                       <div class="row">
-                        <div class="col-lg-6 col-sm-12 ps-4">
-                          <div class="input-group mb-3 input-group-lg">
-                            <label class="input-group-text input-group-lg px-1 my-1" for="inputGroupSelect01">Estado</label>
-                            <select class="form-select my-1" id="inputGroupSelect01">
-                                <option selected>Não informado</option>
+                        <div class="col-lg-6 col-sm-12 mb-3">
+                          <div class="form-floating mb-lg-3 form-control-sm">
+                            <label class="py-1 m-0" for="estado">Estado</label>
+                            <select class="form-select" id="estado" required>
+                                <option selected disabled value="">Não informado</option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -193,10 +193,9 @@
                             </select>
                           </div>
                         </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                          <div class="form-floating mb-lg-3 form-control-sm mb-3">
-                            <input type="text" class="form-control form-control-sm" id="cep" placeholder="Digite o seu cep">
+                        <div class="col-lg-6 col-sm-12 mb-3">
+                          <div class="form-floating mb-lg-3 form-control-sm">
+                            <input type="text" class="form-control form-control-sm" id="cep" placeholder="Digite o seu cep" required>
                             <label for="cep">CEP</label>
                           </div>
                         </div>
@@ -205,12 +204,13 @@
                       <h4 class="mb-3">
                         Senha de Acesso - 
                         <small>
-                            <label>
-                              <input type="checkbox" id="versenha" class="form-check-input"> ver senha
-                            </label>
+                          <label>
+                            <input type="checkbox" id="versenha" class="form-check-input"> ver senha
+                          </label>  
                         </small>
                     </h4>
-                    <div class="row">
+
+                    <div class="row mb-3">
                         <div class="col-lg-6 col-sm-12 mb-3">
                             <label for="senhaA" class="form-label">Senha:</label>
                             <input type="password" class="form-control" id="senhaA" name="senha" required>
@@ -226,12 +226,11 @@
                         <div class="col-lg-2 col-sm-12 mb-3">
                             <input type="submit" value="Cadastrar" id="enviar" class="btn btn-primary btn-lg">
                         </div>
-
                         <div class="col-lg-10 col-sm-12 mb-3 form-check">
                             <input type="checkbox" name="termos" id="termos" class="form-check-input" required>
                             <label for="termos" class="form-check-label">
-                               <a href="termo-privacidade.html" target="_blank">Termos de Privacidade</a> | 
-                               <a href="termo-uso.html" target="_blank">Termos de Uso</a>
+                               <a href="Termo-Privacidade.html" target="_blank">Termos de Privacidade</a> | 
+                               <a href="Termo-Uso.html" target="_blank">Termos de Uso</a>
                             </label>
                         </div>
                     </div>
@@ -244,7 +243,8 @@
             <footer>
               <h6>Livraria Comando &copy; 2021</h6>
             </footer>
-            <script src="js/senha.js"></script>
+
+            <script src="js/magic.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
         </body>
     </html>
