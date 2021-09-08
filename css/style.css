@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Homemade+Apple&family=Kaushan+Script&family=Nanum+Pen+Script&family=Special+Elite&display=swap');
+
 body{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -6,7 +8,6 @@ body{
 h1{
 	font-family: 'Special Elite', cursive; text-align: center;
 	color: #ffff;
-	/*height: 154px;*/
 	font-size: 80px;
 }
 
@@ -33,8 +34,6 @@ h4{
 	background-color:snow;
 }
 
-
-
 header{
 	display: block;
 	background-color: bisque;
@@ -43,99 +42,12 @@ header{
 	background-size: cover;
 }
 
-/*input{
-	color: #ccc;
-	border-radius: 5px;
-	border: 0px;
-	margin: 1px;
-}
-
-input:hover{
-	color: #000;
-	border-radius: 5px;
-	border: 0px;
-	margin: 1px;
-}*/
-
-/*
-input:focus { 
-    outline: none !important;
-    border-color: #719ECE;
-    box-shadow: 0 0 10px #719ECE;
-}*/
-
-/*aside{
-	display: flex;
-	flex-direction: column;
-	background-color: blue;
-}*/
-
-/*
-.menu-principal{
-	display: block;
-	margin: 0;
-	width: 400%;
-	height: 20;
-}
-
-#quemsomos{
-	display: block;
-	height: 400px;
-	background-color: blue;
-}
-
-#clubeda{
-	display: block;
-	height: 400px;
-	background-color: blanchedalmond;
-}
-
-#contato{
-	display: block;
-	height: 400px;
-	background-color: blueviolet;
-}
-*/
 section{
 	background-color: #b48955;
 	padding: 0;
 	margin: 0;
 }
 
-/*
-section:hover{
-	background-color: #dab58a;
-	width: 300px;
-	border-radius: 15px 30px 10px 5px;
-	align-items:baseline;
-	color:black;
-}*/
-/*
-nav ul li{
-	color: #ffffffff;
-	border: 0px;
-	margin: 0px;
-	padding: 0px;
-	display: inline-flex;
-	
-}
-
-nav ul li a{
-	display: block;
-	color: #ffffffff;
-	background-color: #b48955;
-	margin: 0px;
-	border: 0px;
-	height: 40px;
-	padding: 0px;
-	text-decoration: none;
-	border-radius: 5px 30px 10px 5px;
-}*/
-/*
-nav ul li a:visited, a:link{
-	color: #ffffffff;
-}
-*/
 nav ul li a:hover{
 	color:#ffffffff;
 	background-color: #b48955;
@@ -145,6 +57,4 @@ footer{
 	background-color:#ffe4b5;
 	height: 35px;
 	text-align: center;
-
 }
-
