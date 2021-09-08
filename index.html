@@ -7,6 +7,25 @@
         <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Homemade+Apple&family=Kaushan+Script&family=Nanum+Pen+Script&family=Special+Elite&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
 
+        <style>
+            a.back-to-top {
+                background-color: rgba(0, 0, 0, 0.25);
+                border-radius: 5px;
+                box-shadow: 0 0 1px #FFF;
+                color: #FFF;
+                display: none;
+                padding: 5px 12px;
+                position: fixed;
+                right: 15px;
+                text-align: center;
+                text-decoration: none;
+                text-transform: uppercase;
+                top: 85%;
+                transition: all 0.3s ease 0s;
+                font-size: 1.1em;
+            }
+        </style>
+        
         <!-- Desativa botão Direito do mouse
         <script language="JavaScript">
           function protegercodigo() {
@@ -85,6 +104,9 @@
                     <div class="card h-100">
                       <img src="https://svgsilh.com/svg/1294676.svg" class="card-img-top" alt="1...">
                       <div class="card-body">
+                        <div class="m-3">
+                          <a href="cadastro-clube2.html" class="btn btn-outline-danger btn-lg btn-toolbar">Receber</a>
+                        </div>
                         <h5 class="card-title">Titulo/cartão I</h5>
                         <p class="card-text">Este é um cartão mais longo com texto de apoio abaixo como uma introdução natural para conteúdo adicional.</p>
                       </div>
@@ -94,8 +116,12 @@
                     <div class="card h-100">
                       <img src="https://svgsilh.com/svg/1294676.svg" class="card-img-top" alt="2...">
                       <div class="card-body">
+                        <div class="m-3">
+                          <a href="cadastro-clube2.html" class="btn btn-outline-danger btn-lg btn-toolbar">Receber</a>
+                        </div>
                         <h5 class="card-title">Titulo/cartão II</h5>
                         <p class="card-text">Este é um cartão curto.</p>
+
                       </div>
                     </div>
                   </div>
@@ -103,8 +129,12 @@
                     <div class="card h-100">
                       <img src="https://svgsilh.com/svg/1294676.svg" class="card-img-top" alt="3...">
                       <div class="card-body">
+                        <div class="m-3">
+                          <a href="cadastro-clube2.html" class="btn btn-outline-danger btn-lg btn-toolbar">Receber</a>
+                        </div>
                         <h5 class="card-title">Titulo/cartão III</h5>
                         <p class="card-text">Este é um cartão mais longo com texto de apoio abaixo como uma introdução natural para conteúdo adicional.</p>
+
                       </div>
                     </div>
                   </div>
@@ -113,22 +143,56 @@
 
             <section id="contato">
                 <h2>.:Contato_</h2>
-            </section>
+                <div class="row bg-gradient">
+                      <div class="col-lg col-sm-12">
+                        <img src="img/atlas-1052011_640.jpg" class="rounded m-auto d-block" alt="...">
+                      </div>
+                      
+                      <div class="col-lg col-sm-12">
+                        <form>
+                            <div class="form-floating mb-3 my-3">
+                              <input type="text" class="form-control form-control-sm" id="nome" placeholder="Digite o seu endereço completo" required>
+                              <label for="nome">Nome</label>
+                            </div>
 
-            <!-- não está funcionando, ainda...
-            <aside>
-                <h4>testando aside</h4>
-                <p>Lorem Ipsum is asdfggh simply dummy text of the printing and typesetting industry.
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-            </aside>  
-            -->            
+                          <div class="form-floating mb-3">
+                            <input type="tel" class="form-control form-control-sm" id="telefone" required>
+                            <label for="telefone">Telefone</label>
+                          </div>                        
+
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control form-control-sm" id="email" placeholder="Digite o seu endereço completo" required>
+                          <label for="email">E-mail</label>
+                        </div>
+               
+                      <div class="form-floating mb-3">
+                        <textarea class="form-control form-control-sm" placeholder="mensagem" id="mensagem" style="height: 130px"></textarea>
+                        <label for="mensagem">Mensagem</label>
+                      </div>
+
+                      <div class="col-12">
+                        <button class="btn btn-outline-danger btn-lg mb-5" style type="submit">Enviar</button>
+                      </div>
+                    </div>
+                  
+
+
+                        </form>>
+                      </div>
+                </div>
+            </section>   
         </main>
-      
+  
+        <!--rodapé-->
         <footer>
             <h6>Livraria Comando &copy; 2021</h6>
         </footer>
+
+        <!--ir para o topo botão-->
+        <a class="back-to-top" href="#top" style="display:inline;">Ir para o Topo&nbsp;<span class ="iconify" data-icon ="typcn:arrow-up-outline"> </span></a>
+        
+        <!--Scripts/biblitecas-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src = "https://code.iconify.design/2/2.0.3/iconify.min.js"> </script>  
     </body>
 </html>
