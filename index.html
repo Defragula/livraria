@@ -153,25 +153,47 @@
                         </div><!--final da 1º coluna, na estrutura linha p/ x coluna :obs: manter 1 coluna-->
                       
                       <div class="col-lg col-sm-12">
-                        <form>
+                        
+                        <form method="post" action="https://api.staticforms.xyz/submit">                      <!-- via static forms -->
+                          <input type="hidden" name="accessKey" value="5f0e63e6-9f85-4274-9ac1-8d691018c252"> <!-- Requiredo -->
+                          <input type="hidden" name="redirectTo" value="Location:'index.php'"> <!-- Requiredo para redirecionamento -->
+
                             <div class="form-floating mb-3 my-3 mx-2">
-                              <input type="text" class="form-control form-control-sm" id="nome" placeholder="Digite o seu endereço completo" required>
+                              <input type="text"
+                                     maxlength="55" 
+                                     class="form-control form-control-sm" 
+                                     id="nome"
+                                     name="name" 
+                                     placeholder="Digite o seu endereço completo" 
+                                     required>
                               <label for="nome">Nome</label>
                             </div>
 
                             <div class="form-floating mb-3 mx-2">
-                              <input type="tel" class="form-control form-control-sm" id="telefone" placeholder="Digite o seu telefone" required>
+                              <input type="tel" 
+                                     maxlength="13"
+                                     class="form-control form-control-sm" 
+                                     id="telefone"
+                                     name="phone" 
+                                     placeholder="Digite o seu telefone" 
+                                     required>
                               <label for="telefone">Telefone</label>
                             </div>                        
 
                             <div class="form-floating mb-3 mx-2">
-                              <input type="email" class="form-control form-control-sm" id="email" placeholder="Digite o seu e-mail" required>
+                              <input type="email"
+                                     pattern="^([-a-zA-Z0-9_.-]*@(gmail|yahoo|ymail|rocketmail|bol|hotmail|live|msn|ig|globomail|oi|pop|r7|folha|zipmail).(com|info|gov|net|org|tv)(.[-a-z]{2})?)*$" 
+                                     class="form-control form-control-sm" 
+                                     id="email"
+                                     name="email" 
+                                     placeholder="Digite o seu e-mail" 
+                                     required>
                               <label for="email">E-mail</label>
                             </div>
                         
                             <div class="form-floating mb-3 mx-2">
-                              <label class="py-1 m-0" for="estado">Assunto</label>
-                              <select class="form-select" id="assunto" required>
+                              <label class="py-1 m-0" for="estado" placeholder="Assunto" required>Assunto</label>
+                              <select class="form-select" id="assunto" name="subject" required>
                                 <option selected disabled value="">Não informado</option>
                                 <option value="Dúvidas">Dúvidas</option>
                                 <option value="Sugestão">Sugestão</option>
@@ -184,7 +206,12 @@
                             </div>
                
                             <div class="form-floating mb-3 mx-2">
-                              <textarea class="form-control form-control-sm" placeholder="mensagem" id="mensagem" style="height: 100px;"></textarea>
+                              <textarea class="form-control form-control-sm" 
+                                        placeholder="mensagem" 
+                                        id="mensagem"
+                                        name="message" 
+                                        style="height: 100px;"
+                                        required></textarea>
                               <label for="mensagem">Mensagem</label>
                             </div>
 
@@ -196,8 +223,7 @@
                       </div><!--final da 2º coluna na estrutura linha p/ x colunas-->
                       </div><!--final da linha na estrutura linha p/ x colunas-->
 
-            </section>   
-            
+            </section>
         </main>
   
         <!--rodapé-->
